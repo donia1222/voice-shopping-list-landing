@@ -1,14 +1,14 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { ScrollArea } from "@/components/ui/scroll-area"
 import { Mic, Camera, Bell, MapPin, Smartphone, Star, Download, Share2, Edit3, DollarSign } from "lucide-react"
 import { ChevronDown, Globe } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import Link from "next/link"
+import CookieBanner from "@/components/cookie-banner"
 
 type Language = "en" | "es" | "de" | "it" | "fr"
 
@@ -682,8 +682,29 @@ export default function LandingPage() {
     }
   }
 
-  const openEmailClient = () => {
-    window.location.href = "mailto:info@lweb.ch?subject=VoiceList Support"
+  // Remove the openEmailClient function
+  // const openEmailClient = () => {
+  //   window.location.href = "mailto:info@lweb.ch?subject=VoiceList Support"
+  // }
+
+  // Add carousel state
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  // Add useEffect for auto-play
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % 4)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
+  // Add currency logic
+  const getCurrency = (lang: Language) => {
+    return lang === "en" ? "$" : "€"
+  }
+
+  const getPrice = (lang: Language) => {
+    return lang === "en" ? "1.99" : "1.79"
   }
 
   return (
@@ -779,20 +800,33 @@ export default function LandingPage() {
             </a>
           </Button>
         </div>
-
+      <CookieBanner />
         {/* Hero Image - Phone Mockup */}
         <div className="relative max-w-sm mx-auto">
-          {/* Phone Frame */}
           <div className="relative bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
-            {/* Phone Screen */}
-            <div className="bg-black rounded-[2rem] overflow-hidden">
-              <img
-                src="/images/hero-voice.jpg"
-                alt="Create a shopping list with Voice - App interface"
-                className="w-full h-auto"
-              />
+            <div className="bg-black rounded-[2rem] overflow-hidden relative">
+              <div
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{ transform: `translateX(-${currentImageIndex * 100}%)` }}
+              >
+                <img src="/0x0ss.png" alt="Voice shopping list interface" className="w-full h-auto flex-shrink-0" />
+                <img src="/IMG_3175.PNG" alt="Shopping list management" className="w-full h-auto flex-shrink-0" />
+                <img src="/0x0sscopia.png" alt="Voice recognition feature" className="w-full h-auto flex-shrink-0" />
+                <img src="/IMG_3181.PNG" alt="Price estimation feature" className="w-full h-auto flex-shrink-0" />
+              </div>
+              {/* Carousel indicators */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                {[0, 1, 2, 3].map((index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-colors ${
+                      currentImageIndex === index ? "bg-white" : "bg-white/50"
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
-            {/* Phone Details */}
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1/3 h-6 bg-gray-900 rounded-b-xl"></div>
           </div>
         </div>
@@ -942,7 +976,7 @@ export default function LandingPage() {
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">{t.freeVersion}</CardTitle>
               <CardDescription>{t.freeVersionDesc}</CardDescription>
-              <div className="text-4xl font-bold text-gray-900 mt-4">$0</div>
+              <div className="text-4xl font-bold text-gray-900 mt-4">{getCurrency(currentLanguage)}0</div>
               <p className="text-gray-600">{t.foreverFree}</p>
             </CardHeader>
             <CardContent>
@@ -977,7 +1011,10 @@ export default function LandingPage() {
             <CardHeader className="text-center">
               <CardTitle className="text-2xl">{t.premium}</CardTitle>
               <CardDescription>{t.premiumDesc}</CardDescription>
-              <div className="text-4xl font-bold text-gray-900 mt-4">$1.99</div>
+              <div className="text-4xl font-bold text-gray-900 mt-4">
+                {getCurrency(currentLanguage)}
+                {getPrice(currentLanguage)}
+              </div>
               <p className="text-gray-600">{t.perMonth}</p>
             </CardHeader>
             <CardContent>
@@ -1031,36 +1068,13 @@ export default function LandingPage() {
                 {t.downloadIOS}
               </a>
             </Button>
-    
           </div>
         </div>
       </section>
 
       {/* Privacy Policy Modal */}
-      <Dialog open={isPrivacyModalOpen} onOpenChange={setIsPrivacyModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[80vh]">
-          <DialogHeader>
-            <DialogTitle>Privacy Policy</DialogTitle>
-            <DialogDescription>Voice Shopping List Privacy Policy</DialogDescription>
-          </DialogHeader>
-          <ScrollArea className="h-[60vh] w-full rounded-md border p-4">
-            <div className="whitespace-pre-line text-sm">{privacyPolicyText}</div>
-          </ScrollArea>
-        </DialogContent>
-      </Dialog>
 
       {/* Terms of Service Modal */}
-      <Dialog open={isTermsModalOpen} onOpenChange={setIsTermsModalOpen}>
-        <DialogContent className="max-w-4xl max-h-[80vh]">
-          <DialogHeader>
-            <DialogTitle>Terms of Service</DialogTitle>
-            <DialogDescription>VoiceList Terms and Conditions</DialogDescription>
-          </DialogHeader>
-          <ScrollArea className="h-[60vh] w-full rounded-md border p-4">
-            <div className="whitespace-pre-line text-sm">{termsOfServiceText}</div>
-          </ScrollArea>
-        </DialogContent>
-      </Dialog>
 
       {/* Footer */}
       <footer id="contact" className="bg-gray-900 text-white py-12">
@@ -1116,25 +1130,19 @@ export default function LandingPage() {
               <h3 className="text-lg font-semibold mb-4">{t.legal}</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <button
-                    onClick={() => setIsPrivacyModalOpen(true)}
-                    className="hover:text-white transition-colors cursor-pointer"
-                  >
+                  <Link href="/privacy-policy" className="hover:text-white transition-colors">
                     {t.privacyPolicy}
-                  </button>
+                  </Link>
                 </li>
                 <li>
-                  <button
-                    onClick={() => setIsTermsModalOpen(true)}
-                    className="hover:text-white transition-colors cursor-pointer"
-                  >
+                  <Link href="/terms-of-service" className="hover:text-white transition-colors">
                     {t.termsOfService}
-                  </button>
+                  </Link>
                 </li>
                 <li>
-                  <button onClick={openEmailClient} className="hover:text-white transition-colors cursor-pointer">
+                  <Link href="/support" className="hover:text-white transition-colors">
                     {t.support}
-                  </button>
+                  </Link>
                 </li>
               </ul>
             </div>
