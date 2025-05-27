@@ -714,7 +714,7 @@ export default function LandingPage() {
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-8 h-8 rounded-lg" />
-            <span className="text-xl font-bold text-gray-900">Voice-Grocery</span>
+            <span className="text-xl font-bold text-gray-900">Voice Grocery</span>
           </div>
           <div className="flex items-center space-x-6">
             <div className="hidden md:flex items-center space-x-6">
@@ -1083,7 +1083,7 @@ export default function LandingPage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-8 h-8 rounded-lg" />
-                <span className="text-xl font-bold">Voice-Grocery</span>
+                <span className="text-xl font-bold">Voice Grocery</span>
               </div>
               <p className="text-gray-400">{t.tagline}</p>
             </div>
