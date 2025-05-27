@@ -800,9 +800,9 @@ export default function LandingPage() {
             </a>
           </Button>
         </div>
-      <CookieBanner />
+        <CookieBanner />
         {/* Hero Image - Phone Mockup */}
-        <div className="relative max-w-sm mx-auto">
+        <div className="relative max-w-[280px] sm:max-w-xs mx-auto">
           <div className="relative bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
             <div className="bg-black rounded-[2rem] overflow-hidden relative">
               <div
