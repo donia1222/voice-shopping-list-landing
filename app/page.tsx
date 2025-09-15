@@ -785,7 +785,7 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 py-16 text-center">
+      <section className="container mx-auto px-4 text-center mb-20 mt-10">
         <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-100">{t.voicePowered}</Badge>
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
           {t.heroTitle}
@@ -943,16 +943,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="flex justify-center mb-16">
-            <div className="relative">
-              <img
-                src="/images/price-features.png"
-                alt="Price comparison and estimation features"
-                className="max-w-md mx-auto rounded-2xl shadow-2xl border border-white/20"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent rounded-2xl"></div>
-            </div>
-          </div>
+ 
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-white to-blue-50/30">
