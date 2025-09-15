@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Voice Grocery',
+  title: 'BuyVoice',
   description: 'Create Shopping Lists by Voice',
   generator: 'lweb.ch',
 }

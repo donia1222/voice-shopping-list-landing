@@ -32,7 +32,7 @@ export default function SupportPage() {
     e.preventDefault()
 
     // Crear el contenido del email
-    const emailSubject = `VoiceList Support: ${formData.subject || formData.category}`
+    const emailSubject = `BuyVoice Support: ${formData.subject || formData.category}`
     const emailBody = `
 Name: ${formData.name}
 Email: ${formData.email}
@@ -43,7 +43,7 @@ Message:
 ${formData.message}
 
 ---
-Sent from VoiceList support form
+Sent from BuyVoice support form
     `.trim()
 
     // Crear el enlace mailto
@@ -61,7 +61,7 @@ Sent from VoiceList support form
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
               <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-8 h-8 rounded-lg" />
-              <span className="text-xl font-bold text-gray-900">VoiceList</span>
+              <span className="text-xl font-bold text-gray-900">BuyVoice</span>
             </Link>
             <Button variant="outline" asChild>
               <Link href="/" className="flex items-center space-x-2">
@@ -97,7 +97,7 @@ Sent from VoiceList support form
             </CardHeader>
             <CardContent>
               <Button variant="outline" className="w-full" asChild>
-                <a href="mailto:info@lweb.ch?subject=VoiceList Support">info@lweb.ch</a>
+                <a href="mailto:info@lweb.ch?subject=BuyVoice Support">info@lweb.ch</a>
               </Button>
             </CardContent>
           </Card>
@@ -260,7 +260,7 @@ Sent from VoiceList support form
                   <CardTitle className="text-lg text-blue-600">Suggestions</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-gray-600">We love ideas! Share your suggestions to improve VoiceList.</p>
+                  <p className="text-sm text-gray-600">We love ideas! Share your suggestions to improve BuyVoice.</p>
                 </CardContent>
               </Card>
             </div>
@@ -274,7 +274,7 @@ Sent from VoiceList support form
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-6 h-6 rounded-lg" />
-              <span className="text-lg font-bold">VoiceList Support</span>
+              <span className="text-lg font-bold">BuyVoice Support</span>
             </div>
             <p className="text-gray-400 mb-4">© 2024 Lweb Schweiz. All rights reserved.</p>
             <div className="space-x-4">

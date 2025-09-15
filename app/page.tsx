@@ -81,6 +81,10 @@ const translations = {
     imageCredits: "Image Credits",
     imageCreditsText: "Some images are from Freepik.",
     websiteDesign: "Website Design",
+    widgetTitle: "iOS Widget",
+    widgetDescription: "Quickly access BuyVoice directly from your home screen with our smart widget",
+    quickAccess: "Quick Access",
+    quickAccessDescription: "Create shopping lists with voice commands without opening the app",
   },
   es: {
     features: "Características",
@@ -151,6 +155,10 @@ const translations = {
     imageCredits: "Créditos de Imagen",
     imageCreditsText: "Algunas imágenes son de Freepik.",
     websiteDesign: "Diseño Web",
+    widgetTitle: "Widget de iOS",
+    widgetDescription: "Accede rápidamente a BuyVoice directamente desde tu pantalla de inicio con nuestro widget inteligente",
+    quickAccess: "Acceso Rápido",
+    quickAccessDescription: "Crea listas de compras con comandos de voz sin abrir la aplicación",
   },
   de: {
     features: "Funktionen",
@@ -221,6 +229,10 @@ const translations = {
     imageCredits: "Bildnachweis",
     imageCreditsText: "Einige Bilder stammen von Freepik.",
     websiteDesign: "Webseite Design",
+    widgetTitle: "iOS Widget",
+    widgetDescription: "Greifen Sie schnell auf BuyVoice direkt von Ihrem Startbildschirm mit unserem intelligenten Widget zu",
+    quickAccess: "Schneller Zugriff",
+    quickAccessDescription: "Erstellen Sie Einkaufslisten mit Sprachbefehlen ohne die App zu öffnen",
   },
   it: {
     features: "Caratteristiche",
@@ -291,6 +303,10 @@ const translations = {
     imageCredits: "Crediti Immagine",
     imageCreditsText: "Alcune immagini sono di Freepik.",
     websiteDesign: "Design Sito Web",
+    widgetTitle: "Widget iOS",
+    widgetDescription: "Accedi rapidamente a BuyVoice direttamente dalla tua schermata iniziale con il nostro widget intelligente",
+    quickAccess: "Accesso Rapido",
+    quickAccessDescription: "Crea liste della spesa con comandi vocali senza aprire l'app",
   },
   fr: {
     features: "Fonctionnalités",
@@ -361,6 +377,10 @@ const translations = {
     imageCredits: "Crédits Image",
     imageCreditsText: "Certaines images proviennent de Freepik.",
     websiteDesign: "Design du Site Web",
+    widgetTitle: "Widget iOS",
+    widgetDescription: "Accédez rapidement à BuyVoice directement depuis votre écran d'accueil avec notre widget intelligent",
+    quickAccess: "Accès Rapide",
+    quickAccessDescription: "Créez des listes de courses avec des commandes vocales sans ouvrir l'application",
   },
 }
 
@@ -704,7 +724,7 @@ export default function LandingPage() {
   }
 
   const getPrice = (lang: Language) => {
-    return lang === "en" ? "1.99" : "1.79"
+    return lang === "en" ? "2.99" : "2.99"
   }
 
   return (
@@ -714,7 +734,7 @@ export default function LandingPage() {
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-8 h-8 rounded-lg" />
-            <span className="text-xl font-bold text-gray-900">Voice Grocery</span>
+            <span className="text-xl font-bold text-gray-900">BuyVoice</span>
           </div>
           <div className="flex items-center space-x-6">
             <div className="hidden md:flex items-center space-x-6">
@@ -909,57 +929,103 @@ export default function LandingPage() {
       </section>
 
       {/* Price Comparison Section */}
-      <section className="bg-gray-50 py-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 py-24">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t.knowPrices}</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">{t.knowPricesDesc}</p>
+          <div className="text-center mb-20">
+            <Badge className="mb-6 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 border-0 px-4 py-2">
+              💰 Smart Price Insights
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
+              {t.knowPrices}
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              {t.knowPricesDesc}
+            </p>
           </div>
 
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center mb-16">
+            <div className="relative">
+              <img
+                src="/images/price-features.png"
+                alt="Price comparison and estimation features"
+                className="max-w-md mx-auto rounded-2xl shadow-2xl border border-white/20"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent rounded-2xl"></div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-white to-blue-50/30">
+              <CardHeader className="text-center pb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <MapPin className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-bold text-gray-900">Zurich</CardTitle>
+                <CardDescription className="text-gray-600">Premium pricing estimates</CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">$45.20</div>
+                <p className="text-sm text-gray-500 mt-2">Average weekly groceries</p>
+              </CardContent>
+            </Card>
+
+            <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-white to-purple-50/30">
+              <CardHeader className="text-center pb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <MapPin className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-bold text-gray-900">New York</CardTitle>
+                <CardDescription className="text-gray-600">Real-time price data</CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">$38.75</div>
+                <p className="text-sm text-gray-500 mt-2">Average weekly groceries</p>
+              </CardContent>
+            </Card>
+
+            <Card className="group relative overflow-hidden border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-white to-green-50/30">
+              <CardHeader className="text-center pb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <MapPin className="w-8 h-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-bold text-gray-900">London</CardTitle>
+                <CardDescription className="text-gray-600">Local market prices</CardDescription>
+              </CardHeader>
+              <CardContent className="text-center">
+                <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">$42.10</div>
+                <p className="text-sm text-gray-500 mt-2">Average weekly groceries</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Decorative elements */}
+          <div className="absolute top-20 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-200 rounded-full opacity-20 animate-pulse"></div>
+        </div>
+      </section>
+
+      {/* iOS Widget Section */}
+      <section className="container mx-auto px-4 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t.widgetTitle}</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            {t.widgetDescription}
+          </p>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="max-w-sm">
             <img
-              src="/images/price-features.png"
-              alt="Price comparison and estimation features"
-              className="max-w-md mx-auto"
+              src="/widget.png"
+              alt="BuyVoice iOS Widget"
+              className="w-full h-auto rounded-3xl shadow-2xl"
             />
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <Card className="text-center border-0 shadow-lg">
-              <CardHeader>
-                <MapPin className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                <CardTitle>Zurich</CardTitle>
-                <CardDescription>Premium pricing estimates</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold text-gray-900">$45.20</div>
-                <p className="text-sm text-gray-600">Average weekly groceries</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-0 shadow-lg">
-              <CardHeader>
-                <MapPin className="w-8 h-8 text-purple-600 mx-auto mb-2" />
-                <CardTitle>New York</CardTitle>
-                <CardDescription>Real-time price data</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold text-gray-900">$38.75</div>
-                <p className="text-sm text-gray-600">Average weekly groceries</p>
-              </CardContent>
-            </Card>
-
-            <Card className="text-center border-0 shadow-lg">
-              <CardHeader>
-                <MapPin className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                <CardTitle>London</CardTitle>
-                <CardDescription>Local market prices</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold text-gray-900">$42.10</div>
-                <p className="text-sm text-gray-600">Average weekly groceries</p>
-              </CardContent>
-            </Card>
+            <div className="text-center mt-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">{t.quickAccess}</h3>
+              <p className="text-gray-600">
+                {t.quickAccessDescription}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -1083,7 +1149,7 @@ export default function LandingPage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-8 h-8 rounded-lg" />
-                <span className="text-xl font-bold">Voice Grocery</span>
+                <span className="text-xl font-bold">BuyVoice</span>
               </div>
               <p className="text-gray-400">{t.tagline}</p>
             </div>
