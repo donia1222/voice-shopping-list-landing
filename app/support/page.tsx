@@ -60,7 +60,7 @@ Sent from BuyVoice support form
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-8 h-8 rounded-lg" />
+              <img src="/images/app-icon.png" alt="BuyVoice App Icon" className="w-8 h-8 rounded-lg" />
               <span className="text-xl font-bold text-gray-900">BuyVoice</span>
             </Link>
             <Button variant="outline" asChild>
@@ -273,7 +273,7 @@ Sent from BuyVoice support form
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
-              <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-6 h-6 rounded-lg" />
+              <img src="/images/app-icon.png" alt="BuyVoice App Icon" className="w-6 h-6 rounded-lg" />
               <span className="text-lg font-bold">BuyVoice Support</span>
             </div>
             <p className="text-gray-400 mb-4">© 2024 Lweb Schweiz. All rights reserved.</p>

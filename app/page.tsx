@@ -69,7 +69,7 @@ const translations = {
     subscribeNow: "Subscribe Now",
     readyTransform: "Ready to Transform Your Shopping?",
     readyTransformDesc:
-      "Join thousands of users who have already simplified their shopping with VoiceList. Download now and experience the future of shopping lists.",
+      "Join thousands of users who have already simplified their shopping with BuyVoice. Download now and experience the future of shopping lists.",
     quickLinks: "Quick Links",
     home: "Home",
     legal: "Legal",
@@ -506,7 +506,7 @@ Terms and Conditions:
  
 Article 1 - General scope and object of the agreement
 
-The following terms and conditions (T&C) govern the relationship between you as a client and our company while interacting through our website https://voice-shopping-list.com and/or on our application VoiceList.
+The following terms and conditions (T&C) govern the relationship between you as a client and our company while interacting through our website https://buyvoice.app and/or on our application BuyVoice.
 
 Navigating and/or interacting on our website and/or application means that you expressly agree to these T&C without reserve or objection.
 
@@ -704,7 +704,7 @@ export default function LandingPage() {
 
   // Remove the openEmailClient function
   // const openEmailClient = () => {
-  //   window.location.href = "mailto:info@lweb.ch?subject=VoiceList Support"
+  //   window.location.href = "mailto:info@lweb.ch?subject=BuyVoice Support"
   // }
 
   // Add carousel state
@@ -733,7 +733,7 @@ export default function LandingPage() {
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-8 h-8 rounded-lg" />
+            <img src="/images/app-icon.png" alt="BuyVoice App Icon" className="w-8 h-8 rounded-lg" />
             <span className="text-xl font-bold text-gray-900">BuyVoice</span>
           </div>
           <div className="flex items-center space-x-6">
@@ -1148,7 +1148,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <img src="/images/app-icon.png" alt="VoiceList App Icon" className="w-8 h-8 rounded-lg" />
+                <img src="/images/app-icon.png" alt="BuyVoice App Icon" className="w-8 h-8 rounded-lg" />
                 <span className="text-xl font-bold">BuyVoice</span>
               </div>
               <p className="text-gray-400">{t.tagline}</p>

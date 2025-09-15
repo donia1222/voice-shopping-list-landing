@@ -1,7 +1,9 @@
 {
-  "name": "my-v0-project",
-  "version": "0.1.0",
+  "name": "buyvoice-landing",
+  "version": "1.0.0",
   "private": true,
+  "description": "BuyVoice - Voice Shopping Lists App Landing Page",
+  "keywords": ["BuyVoice", "voice shopping", "shopping lists", "voice recognition", "iOS app"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
