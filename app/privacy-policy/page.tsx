@@ -129,7 +129,7 @@ export default function PrivacyPolicyPage() {
             <Button variant="outline" asChild>
               <Link href="/" className="flex items-center space-x-2">
                 <ArrowLeft className="w-4 h-4" />
-                <span>Volver al inicio</span>
+                <span>Back to Home</span>
               </Link>
             </Button>
           </div>
