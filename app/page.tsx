@@ -1388,7 +1388,7 @@ export default function LandingPage() {
       <header className="container mx-auto px-4 py-6">
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <img src="/images/app-icon.png" alt="BuyVoice App Icon" className="w-8 h-8 rounded-lg" />
+            <img src="/images/app-icon.png" alt="BuyVoice App Icon" className="w-12 h-12 rounded-lg" />
             <span className="text-xl font-bold text-gray-900">BuyVoice</span>
           </div>
           <div className="flex items-center space-x-6">
@@ -1444,7 +1444,7 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 text-center mb-20 mt-10">
+      <section className="container mx-auto px-4 text-center mb-20 mt-4">
         <Badge className="mb-4 bg-blue-100/80 text-blue-800 hover:bg-blue-100/90 border-0 backdrop-blur-sm">
           {t.voicePowered}
         </Badge>
