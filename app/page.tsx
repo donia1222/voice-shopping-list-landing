@@ -1444,7 +1444,7 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 text-center mb-20 mt-4">
+      <section className="container mx-auto px-4 text-center mb-20 mt-6">
         <Badge className="mb-4 bg-blue-100/80 text-blue-800 hover:bg-blue-100/90 border-0 backdrop-blur-sm">
           {t.voicePowered}
         </Badge>
