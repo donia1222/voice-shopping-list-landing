@@ -17,18 +17,18 @@ const translations = {
     features: "Features",
     pricing: "Pricing",
     contact: "Contact",
-    voicePowered: "📝 Manual Shopping Lists",
+    voicePowered: "🎤 Voice Shopping Lists",
     heroTitle: "Create Shopping Lists",
-    heroTitleAccent: " by Hand",
+    heroTitleAccent: " by Voice",
     heroDescription:
-      "Write and organize manually. Create detailed shopping lists by typing items one by one. Full control over your shopping organization!",
+      "Speak and we'll handle the rest. Say phrases like 'tomorrow I'm buying chicken, tomatoes and onions' and our AI will select the ingredients for your list. Forget about typing!",
     downloadIOS: "Download for iOS",
     viewAppStore: "View on App Store",
     powerfulFeatures: "Powerful Features for Smart Shopping",
     featuresDescription: "Everything you need to organize your shopping efficiently and never forget an item again.",
-    voiceRecognition: "Manual Input",
+    voiceRecognition: "Voice Recognition",
     voiceRecognitionDesc:
-      "Type your shopping items manually. Create organized lists by adding items one by one with full control.",
+      "Speak your shopping items naturally. Our AI understands your voice commands and creates organized lists automatically.",
     photoDigitization: "Photo Digitization",
     photoDigitizationDesc:
       "Take a photo of handwritten lists and we'll digitize them instantly. Convert any paper list to digital format. (Premium feature)",
@@ -57,7 +57,7 @@ const translations = {
     premiumDesc: "Support the app development",
     perMonth: "per month",
     mostPopular: "Most Popular",
-    allVoiceFeatures: "All manual features",
+    allVoiceFeatures: "All voice features",
     pushNotifications: "Push notifications",
     includesAds: "No ads",
     downloadFree: "Download Free",
@@ -78,22 +78,22 @@ const translations = {
     termsOfService: "Terms of Service",
     support: "Support",
     copyright: "© 2025 Lweb Schweiz. All rights reserved.",
-    tagline: "The smart way to create and manage your shopping lists manually.",
+    tagline: "The smart way to create and manage your shopping lists with voice.",
     imageCredits: "Image Credits",
     imageCreditsText: "Some images are from Freepik.",
     websiteDesign: "Website Design",
     widgetTitle: "iOS Widget",
     widgetDescription: "Quickly access BuyVoice directly from your home screen with our smart widget",
     quickAccess: "Quick Access",
-    quickAccessDescription: "Create shopping lists manually without opening the app",
+    quickAccessDescription: "Create shopping lists with voice commands without opening the app",
   },
   es: {
     features: "Características",
     pricing: "Precios",
     contact: "Contacto",
-    voicePowered: "📝 Listas Manuales",
+    voicePowered: "🎤 Listas por Voz",
     heroTitle: "Crea Listas de Compras",
-    heroTitleAccent: " a Mano",
+    heroTitleAccent: " por Voz",
     heroDescription:
       'Habla y nosotros nos encargamos del resto. Di frases como "mañana voy a comprar pollo, tomates y cebollas" y nuestra IA seleccionará los ingredientes para tu lista. ¡Olvídate de escribir!',
     downloadIOS: "Descargar para iOS",
@@ -101,9 +101,9 @@ const translations = {
     powerfulFeatures: "Características Poderosas para Compras Inteligentes",
     featuresDescription:
       "Todo lo que necesitas para organizar tus compras de manera eficiente y nunca olvidar un artículo.",
-    voiceRecognition: "Entrada Manual",
+    voiceRecognition: "Reconocimiento de Voz",
     voiceRecognitionDesc:
-      "Escribe tus artículos de compra manualmente. Crea listas organizadas agregando elementos uno por uno con control total.",
+      "Habla tus artículos de compra naturalmente. Nuestra IA entiende tus comandos de voz y crea listas organizadas automáticamente.",
     photoDigitization: "Digitalización de Fotos",
     photoDigitizationDesc:
       "Toma una foto de listas escritas a mano y las digitalizaremos al instante. Convierte cualquier lista en papel a formato digital. (Característica Premium)",
@@ -132,7 +132,7 @@ const translations = {
     premiumDesc: "Apoya el desarrollo de la app",
     perMonth: "por mes",
     mostPopular: "Más Popular",
-    allVoiceFeatures: "Todas las características manuales",
+    allVoiceFeatures: "Todas las características de voz",
     pushNotifications: "Notificaciones push",
     includesAds: "Incluye anuncios",
     downloadFree: "Descargar Gratis",
@@ -153,7 +153,7 @@ const translations = {
     termsOfService: "Términos de Servicio",
     support: "Soporte",
     copyright: "© 2025 Lweb Schweiz. Todos los derechos reservados.",
-    tagline: "La forma inteligente de crear y gestionar tus listas de compras manualmente.",
+    tagline: "La forma inteligente de crear y gestionar tus listas de compras por voz.",
     imageCredits: "Créditos de Imagen",
     imageCreditsText: "Algunas imágenes son de Freepik.",
     websiteDesign: "Diseño Web",
@@ -161,13 +161,13 @@ const translations = {
     widgetDescription:
       "Accede rápidamente a BuyVoice directamente desde tu pantalla de inicio con nuestro widget inteligente",
     quickAccess: "Acceso Rápido",
-    quickAccessDescription: "Crea listas de compras manualmente sin abrir la aplicación",
+    quickAccessDescription: "Crea listas de compras con comandos de voz sin abrir la aplicación",
   },
   de: {
     features: "Funktionen",
     pricing: "Preise",
     contact: "Kontakt",
-    voicePowered: "📝 Manuelle Listen",
+    voicePowered: "🎤 Sprach-Einkaufslisten",
     heroTitle: "Erstelle Einkaufslisten",
     heroTitleAccent: " per Sprache",
     heroDescription:
@@ -243,7 +243,7 @@ const translations = {
     features: "Caratteristiche",
     pricing: "Prezzi",
     contact: "Contatto",
-    voicePowered: "📝 Liste Manuali",
+    voicePowered: "🎤 Liste Vocali",
     heroTitle: "Crea Liste della Spesa",
     heroTitleAccent: " con la Voce",
     heroDescription:
@@ -253,9 +253,9 @@ const translations = {
     powerfulFeatures: "Caratteristiche Potenti per Shopping Intelligente",
     featuresDescription:
       "Tutto ciò di cui hai bisogno per organizzare i tuoi acquisti in modo efficiente e non dimenticare mai un articolo.",
-    voiceRecognition: "Input Manuale",
+    voiceRecognition: "Riconoscimento Vocale",
     voiceRecognitionDesc:
-      "Digita i tuoi articoli della spesa manualmente. Crea liste organizzate aggiungendo elementi uno per uno con controllo completo.",
+      "Parla i tuoi articoli della spesa naturalmente. La nostra IA comprende i tuoi comandi vocali e crea liste organizzate automaticamente.",
     photoDigitization: "Digitalizzazione Foto",
     photoDigitizationDesc:
       "Scatta una foto di liste scritte a mano e le digitalizzeremo istantaneamente. Converti qualsiasi lista cartacea in formato digitale. (Caratteristica Premium)",
@@ -284,7 +284,7 @@ const translations = {
     premiumDesc: "Supporta lo sviluppo dell'app",
     perMonth: "al mese",
     mostPopular: "Più Popolare",
-    allVoiceFeatures: "Tutte le caratteristiche manuali",
+    allVoiceFeatures: "Tutte le caratteristiche vocali",
     pushNotifications: "Notifiche push",
     includesAds: "Include annunci",
     downloadFree: "Scarica Gratis",
@@ -305,7 +305,7 @@ const translations = {
     termsOfService: "Termini di Servizio",
     support: "Supporto",
     copyright: "© 2025 Lweb Schweiz. Tutti i diritti riservati.",
-    tagline: "Il modo intelligente per creare e gestire le tue liste della spesa manualmente.",
+    tagline: "Il modo intelligente per creare e gestire le tue liste della spesa con la voce.",
     imageCredits: "Crediti Immagine",
     imageCreditsText: "Alcune immagini sono di Freepik.",
     websiteDesign: "Design Sito Web",
@@ -313,13 +313,13 @@ const translations = {
     widgetDescription:
       "Accedi rapidamente a BuyVoice direttamente dalla tua schermata iniziale con il nostro widget intelligente",
     quickAccess: "Accesso Rapido",
-    quickAccessDescription: "Crea liste della spesa manualmente senza aprire l'app",
+    quickAccessDescription: "Crea liste della spesa con comandi vocali senza aprire l'app",
   },
   fr: {
     features: "Fonctionnalités",
     pricing: "Tarifs",
     contact: "Contact",
-    voicePowered: "📝 Listes Manuelles",
+    voicePowered: "🎤 Listes Vocales",
     heroTitle: "Créez des Listes de Courses",
     heroTitleAccent: " par la Voix",
     heroDescription:
@@ -329,9 +329,9 @@ const translations = {
     powerfulFeatures: "Fonctionnalités Puissantes pour un Shopping Intelligent",
     featuresDescription:
       "Tout ce dont vous avez besoin pour organiser vos courses efficacement et ne jamais oublier un article.",
-    voiceRecognition: "Saisie Manuelle",
+    voiceRecognition: "Reconnaissance Vocale",
     voiceRecognitionDesc:
-      "Tapez vos articles de courses manuellement. Créez des listes organisées en ajoutant des éléments un par un avec un contrôle total.",
+      "Parlez vos articles de courses naturellement. Notre IA comprend vos commandes vocales et crée des listes organisées automatiquement.",
     photoDigitization: "Numérisation de Photos",
     photoDigitizationDesc:
       "Prenez une photo de listes manuscrites et nous les numériserons instantanément. Convertissez n'importe quelle liste papier en format numérique. (Fonctionnalité Premium)",
@@ -360,7 +360,7 @@ const translations = {
     premiumDesc: "Soutenez le développement de l'app",
     perMonth: "par mois",
     mostPopular: "Le Plus Populaire",
-    allVoiceFeatures: "Toutes les fonctionnalités manuelles",
+    allVoiceFeatures: "Toutes les fonctionnalités vocales",
     pushNotifications: "Notifications push",
     includesAds: "Inclut des publicités",
     downloadFree: "Télécharger Gratuitement",
@@ -381,7 +381,7 @@ const translations = {
     termsOfService: "Conditions de Service",
     support: "Support",
     copyright: "© 2025 Lweb Schweiz. Tous droits réservés.",
-    tagline: "La façon intelligente de créer et gérer vos listes de courses manuellement.",
+    tagline: "La façon intelligente de créer et gérer vos listes de courses par la voix.",
     imageCredits: "Crédits Image",
     imageCreditsText: "Certaines images proviennent de Freepik.",
     websiteDesign: "Design du Site Web",
@@ -389,7 +389,7 @@ const translations = {
     widgetDescription:
       "Accédez rapidement à BuyVoice directement depuis votre écran d'accueil avec notre widget intelligent",
     quickAccess: "Accès Rapide",
-    quickAccessDescription: "Créez des listes de courses manuellement sans ouvrir l'application",
+    quickAccessDescription: "Créez des listes de courses avec des commandes vocales sans ouvrir l'application",
   },
 }
 
