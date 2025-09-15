@@ -788,6 +788,25 @@ Our Company reserves the right to issue refunds or credits at our sole discretio
 If IAP are made within our Services you must check the Store Terms and Conditions on how to manage and get your refund or cancellation. You can check their condition at https://support.apple.com/en-ph/HT204084 for Apple or at https://support.google.com/googleplay/answer/2479637?hl=en for Google.`
 
 export default function LandingPage() {
+  // Detectar idioma del navegador automáticamente
+  const detectBrowserLanguage = (): Language => {
+    if (typeof window === 'undefined') return "en"
+
+    const browserLang = navigator.language || navigator.languages?.[0] || "en"
+    const langCode = browserLang.split('-')[0].toLowerCase()
+
+    // Mapear códigos de idioma a nuestros idiomas soportados
+    const supportedLanguages: Record<string, Language> = {
+      'es': 'es', // Español
+      'de': 'de', // Alemán
+      'it': 'it', // Italiano
+      'fr': 'fr', // Francés
+      'en': 'en'  // Inglés
+    }
+
+    return supportedLanguages[langCode] || "en" // Default a inglés si no se encuentra
+  }
+
   const [currentLanguage, setCurrentLanguage] = useState<Language>("en")
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
   const [isTermsModalOpen, setIsTermsModalOpen] = useState(false)
@@ -810,6 +829,13 @@ export default function LandingPage() {
 
   // Add carousel state
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  // Detectar idioma del navegador al cargar la página
+  useEffect(() => {
+    const detectedLanguage = detectBrowserLanguage()
+    setCurrentLanguage(detectedLanguage)
+    console.log(`🌍 Idioma detectado: ${detectedLanguage} (navegador: ${navigator.language})`)
+  }, [])
 
   // Add useEffect for auto-play
   useEffect(() => {
