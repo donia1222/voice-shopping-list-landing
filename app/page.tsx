@@ -86,6 +86,11 @@ const translations = {
     widgetDescription: "Quickly access BuyVoice directly from your home screen with our smart widget",
     quickAccess: "Quick Access",
     quickAccessDescription: "Create shopping lists with voice commands without opening the app",
+    globalSupport: "Global Support",
+    availableLanguages: "Available in 13 Languages",
+    globalSupportDesc: "BuyVoice speaks your language! Our app is fully translated and optimized for users worldwide.",
+    autoDetected: "Auto-detected: We automatically detect your browser language and show BuyVoice in your preferred language.",
+    currentlyViewing: "Currently viewing in:",
   },
   es: {
     features: "Características",
@@ -124,7 +129,7 @@ const translations = {
       "¿Quieres saber cuánto costará tu lista en Zurich, Nueva York o cualquier otra ciudad? Nuestra app ofrece estimaciones de precios para planificar tu presupuesto. ¡Siempre está preparado!",
     useAllFeatures: "Usa Todas las Características Sin Barreras",
     useAllFeaturesDesc:
-      "Nuestra app es completamente gratuita gracias a los anuncios. Puedes suscribirte para eliminar anuncios y apoyar el mantenimiento y actualizaciones de la app.",
+      "Nuestra app es completamente gratuita sin anuncios. Puedes suscribirte para características premium y apoyar el mantenimiento y actualizaciones de la app.",
     freeVersion: "Versión Gratuita",
     freeVersionDesc: "Perfecto para empezar",
     foreverFree: "Gratis para siempre",
@@ -137,7 +142,7 @@ const translations = {
     includesAds: "Incluye anuncios",
     downloadFree: "Descargar Gratis",
     allFreeFeatures: "Todas las características gratuitas",
-    noAdsExperience: "Experiencia sin anuncios",
+    noAdsExperience: "Características premium",
     voiceFeatures: "Reconocimiento y comandos de voz",
     prioritySupport: "Soporte prioritario",
     earlyAccess: "Acceso temprano a características",
@@ -162,6 +167,11 @@ const translations = {
       "Accede rápidamente a BuyVoice directamente desde tu pantalla de inicio con nuestro widget inteligente",
     quickAccess: "Acceso Rápido",
     quickAccessDescription: "Crea listas de compras con comandos de voz sin abrir la aplicación",
+    globalSupport: "Soporte Global",
+    availableLanguages: "Disponible en 13 Idiomas",
+    globalSupportDesc: "¡BuyVoice habla tu idioma! Nuestra app está completamente traducida y optimizada para usuarios de todo el mundo.",
+    autoDetected: "Auto-detectado: Detectamos automáticamente el idioma de tu navegador y mostramos BuyVoice en tu idioma preferido.",
+    currentlyViewing: "Viendo actualmente en:",
   },
   de: {
     features: "Funktionen",
@@ -177,9 +187,9 @@ const translations = {
     powerfulFeatures: "Leistungsstarke Funktionen für intelligentes Einkaufen",
     featuresDescription:
       "Alles was Sie brauchen, um Ihre Einkäufe effizient zu organisieren und nie wieder einen Artikel zu vergessen.",
-    voiceRecognition: "Manuelle Eingabe",
+    voiceRecognition: "Spracherkennung",
     voiceRecognitionDesc:
-      "Tippen Sie Ihre Einkaufsartikel manuell ein. Erstellen Sie organisierte Listen, indem Sie Artikel einzeln mit voller Kontrolle hinzufügen.",
+      "Sprechen Sie Ihre Einkaufsartikel natürlich aus. Unsere KI versteht Ihre Sprachbefehle und erstellt automatisch organisierte Listen.",
     photoDigitization: "Foto-Digitalisierung",
     photoDigitizationDesc:
       "Fotografieren Sie handgeschriebene Listen und wir digitalisieren sie sofort. Wandeln Sie jede Papierliste in ein digitales Format um. (Premium-Funktion)",
@@ -200,7 +210,7 @@ const translations = {
       "Möchten Sie wissen, wie viel Ihre Liste in Zürich, New York oder einer anderen Stadt kosten wird? Unsere App bietet Preisschätzungen zur Budgetplanung. Seien Sie immer vorbereitet!",
     useAllFeatures: "Nutzen Sie alle Funktionen ohne Barrieren",
     useAllFeaturesDesc:
-      "Unsere App ist dank Werbung völlig kostenlos. Sie können sich anmelden, um Werbung zu entfernen und die Wartung und Updates der App zu unterstützen.",
+      "Unsere App ist völlig kostenlos ohne Werbung. Sie können sich für Premium-Funktionen anmelden und die Wartung und Updates der App unterstützen.",
     freeVersion: "Kostenlose Version",
     freeVersionDesc: "Perfekt für den Einstieg",
     foreverFree: "Für immer kostenlos",
@@ -208,12 +218,12 @@ const translations = {
     premiumDesc: "Unterstützen Sie die App-Entwicklung",
     perMonth: "pro Monat",
     mostPopular: "Am beliebtesten",
-    allVoiceFeatures: "Alle manuellen Funktionen",
+    allVoiceFeatures: "Alle Sprachfunktionen",
     pushNotifications: "Push-Benachrichtigungen",
     includesAds: "Enthält Werbung",
     downloadFree: "Kostenlos herunterladen",
     allFreeFeatures: "Alle kostenlosen Funktionen",
-    noAdsExperience: "Werbefreie Erfahrung",
+    noAdsExperience: "Premium-Funktionen",
     voiceFeatures: "Spracherkennung & Befehle",
     prioritySupport: "Prioritätssupport",
     earlyAccess: "Früher Zugang zu Funktionen",
@@ -238,6 +248,11 @@ const translations = {
       "Greifen Sie schnell auf BuyVoice direkt von Ihrem Startbildschirm mit unserem intelligenten Widget zu",
     quickAccess: "Schneller Zugriff",
     quickAccessDescription: "Erstellen Sie Einkaufslisten mit Sprachbefehlen ohne die App zu öffnen",
+    globalSupport: "Globaler Support",
+    availableLanguages: "Verfügbar in 13 Sprachen",
+    globalSupportDesc: "BuyVoice spricht Ihre Sprache! Unsere App ist vollständig übersetzt und für Benutzer weltweit optimiert.",
+    autoDetected: "Automatisch erkannt: Wir erkennen automatisch Ihre Browsersprache und zeigen BuyVoice in Ihrer bevorzugten Sprache an.",
+    currentlyViewing: "Derzeit angezeigt in:",
   },
   it: {
     features: "Caratteristiche",
@@ -276,7 +291,7 @@ const translations = {
       "Vuoi sapere quanto costerà la tua lista a Zurigo, New York o in qualsiasi altra città? La nostra app offre stime dei prezzi per pianificare il tuo budget. Sii sempre preparato!",
     useAllFeatures: "Usa Tutte le Caratteristiche Senza Barriere",
     useAllFeaturesDesc:
-      "La nostra app è completamente gratuita grazie agli annunci. Puoi abbonarti per rimuovere gli annunci e supportare la manutenzione e gli aggiornamenti dell'app.",
+      "La nostra app è completamente gratuita senza annunci. Puoi abbonarti per caratteristiche premium e supportare la manutenzione e gli aggiornamenti dell'app.",
     freeVersion: "Versione Gratuita",
     freeVersionDesc: "Perfetto per iniziare",
     foreverFree: "Gratis per sempre",
@@ -289,7 +304,7 @@ const translations = {
     includesAds: "Include annunci",
     downloadFree: "Scarica Gratis",
     allFreeFeatures: "Tutte le caratteristiche gratuite",
-    noAdsExperience: "Esperienza senza annunci",
+    noAdsExperience: "Caratteristiche premium",
     voiceFeatures: "Riconoscimento vocale e comandi",
     prioritySupport: "Supporto prioritario",
     earlyAccess: "Accesso anticipato alle caratteristiche",
@@ -314,6 +329,11 @@ const translations = {
       "Accedi rapidamente a BuyVoice direttamente dalla tua schermata iniziale con il nostro widget intelligente",
     quickAccess: "Accesso Rapido",
     quickAccessDescription: "Crea liste della spesa con comandi vocali senza aprire l'app",
+    globalSupport: "Supporto Globale",
+    availableLanguages: "Disponibile in 13 Lingue",
+    globalSupportDesc: "BuyVoice parla la tua lingua! La nostra app è completamente tradotta e ottimizzata per gli utenti di tutto il mondo.",
+    autoDetected: "Rilevato automaticamente: Rileva automaticamente la lingua del tuo browser e mostra BuyVoice nella tua lingua preferita.",
+    currentlyViewing: "Attualmente visualizzato in:",
   },
   fr: {
     features: "Fonctionnalités",
@@ -352,7 +372,7 @@ const translations = {
       "Voulez-vous savoir combien votre liste coûtera à Zurich, New York ou dans toute autre ville ? Notre app offre des estimations de prix pour planifier votre budget. Soyez toujours préparé !",
     useAllFeatures: "Utilisez Toutes les Fonctionnalités Sans Barrières",
     useAllFeaturesDesc:
-      "Notre app est entièrement gratuite grâce aux publicités. Vous pouvez vous abonner pour supprimer les publicités et soutenir la maintenance et les mises à jour de l'app.",
+      "Notre app est entièrement gratuite sans publicités. Vous pouvez vous abonner pour des fonctionnalités premium et soutenir la maintenance et les mises à jour de l'app.",
     freeVersion: "Version Gratuite",
     freeVersionDesc: "Parfait pour commencer",
     foreverFree: "Gratuit pour toujours",
@@ -365,7 +385,7 @@ const translations = {
     includesAds: "Inclut des publicités",
     downloadFree: "Télécharger Gratuitement",
     allFreeFeatures: "Toutes les fonctionnalités gratuites",
-    noAdsExperience: "Expérience sans publicités",
+    noAdsExperience: "Fonctionnalités premium",
     voiceFeatures: "Reconnaissance vocale et commandes",
     prioritySupport: "Support prioritaire",
     earlyAccess: "Accès anticipé aux fonctionnalités",
@@ -390,6 +410,11 @@ const translations = {
       "Accédez rapidement à BuyVoice directement depuis votre écran d'accueil avec notre widget intelligent",
     quickAccess: "Accès Rapide",
     quickAccessDescription: "Créez des listes de courses avec des commandes vocales sans ouvrir l'application",
+    globalSupport: "Support Mondial",
+    availableLanguages: "Disponible en 13 Langues",
+    globalSupportDesc: "BuyVoice parle votre langue ! Notre application est entièrement traduite et optimisée pour les utilisateurs du monde entier.",
+    autoDetected: "Détection automatique : Nous détectons automatiquement la langue de votre navigateur et affichons BuyVoice dans votre langue préférée.",
+    currentlyViewing: "Actuellement affiché en :",
   },
   tr: {
     features: "Özellikler",
@@ -454,6 +479,11 @@ const translations = {
     widgetDescription: "Akıllı widget'ımızla ana ekranınızdan doğrudan BuyVoice'a hızlıca erişin",
     quickAccess: "Hızlı Erişim",
     quickAccessDescription: "Uygulamayı açmadan ses komutlarıyla alışveriş listeleri oluşturun",
+    globalSupport: "Küresel Destek",
+    availableLanguages: "13 Dilde Kullanılabilir",
+    globalSupportDesc: "BuyVoice sizin dilinizi konuşuyor! Uygulamamız tamamen çevrilmiş ve dünya çapındaki kullanıcılar için optimize edilmiştir.",
+    autoDetected: "Otomatik algılama: Tarayıcı dilinizi otomatik olarak algılar ve BuyVoice'ı tercih ettiğiniz dilde gösteririz.",
+    currentlyViewing: "Şu anda görüntülenen dil:",
   },
   pt: {
     features: "Recursos",
@@ -518,6 +548,11 @@ const translations = {
     widgetDescription: "Acesse rapidamente o BuyVoice diretamente da sua tela inicial com nosso widget inteligente",
     quickAccess: "Acesso Rápido",
     quickAccessDescription: "Crie listas de compras com comandos de voz sem abrir o app",
+    globalSupport: "Suporte Global",
+    availableLanguages: "Disponível em 13 Idiomas",
+    globalSupportDesc: "BuyVoice fala sua língua! Nosso app é totalmente traduzido e otimizado para usuários do mundo todo.",
+    autoDetected: "Detectado automaticamente: Detectamos automaticamente o idioma do seu navegador e mostramos BuyVoice no seu idioma preferido.",
+    currentlyViewing: "Visualizando atualmente em:",
   },
   ru: {
     features: "Функции",
@@ -582,6 +617,11 @@ const translations = {
     widgetDescription: "Быстро получайте доступ к BuyVoice прямо с домашнего экрана с помощью нашего умного виджета",
     quickAccess: "Быстрый Доступ",
     quickAccessDescription: "Создавайте списки покупок голосовыми командами без открытия приложения",
+    globalSupport: "Глобальная Поддержка",
+    availableLanguages: "Доступно на 13 Языках",
+    globalSupportDesc: "BuyVoice говорит на вашем языке! Наше приложение полностью переведено и оптимизировано для пользователей по всему миру.",
+    autoDetected: "Автоматическое определение: Мы автоматически определяем язык вашего браузера и показываем BuyVoice на предпочитаемом языке.",
+    currentlyViewing: "В настоящее время просматривается на:",
   },
   ar: {
     features: "الميزات",
@@ -646,6 +686,11 @@ const translations = {
     widgetDescription: "الوصول السريع إلى BuyVoice مباشرة من شاشتك الرئيسية مع أداتنا الذكية",
     quickAccess: "وصول سريع",
     quickAccessDescription: "إنشاء قوائم التسوق بأوامر صوتية بدون فتح التطبيق",
+    globalSupport: "الدعم العالمي",
+    availableLanguages: "متاح بـ 13 لغة",
+    globalSupportDesc: "BuyVoice يتحدث لغتك! تطبيقنا مترجم بالكامل ومُحسَّن للمستخدمين في جميع أنحاء العالم.",
+    autoDetected: "الكشف التلقائي: نكتشف تلقائياً لغة متصفحك ونعرض BuyVoice بلغتك المفضلة.",
+    currentlyViewing: "يتم عرضه حالياً بـ:",
   },
   hu: {
     features: "Funkciók",
@@ -710,6 +755,11 @@ const translations = {
     widgetDescription: "Gyors hozzáférés a BuyVoice-hoz közvetlenül a kezdőképernyődről az okos widgetünkkel",
     quickAccess: "Gyors Hozzáférés",
     quickAccessDescription: "Hozz létre bevásárlólistákat hangparancsokkal az alkalmazás megnyitása nélkül",
+    globalSupport: "Globális Támogatás",
+    availableLanguages: "13 Nyelven Elérhető",
+    globalSupportDesc: "A BuyVoice beszéli az Ön nyelvét! Alkalmazásunk teljesen lefordított és optimalizált a világ minden tájáról érkező felhasználók számára.",
+    autoDetected: "Automatikus észlelés: Automatikusan észleljük böngésző nyelvét, és a BuyVoice-ot az Ön által preferált nyelven jelenítjük meg.",
+    currentlyViewing: "Jelenleg a következő nyelven tekinti meg:",
   },
   ja: {
     features: "機能",
@@ -774,6 +824,11 @@ const translations = {
     widgetDescription: "スマートウィジェットでホーム画面から直接BuyVoiceに素早くアクセス",
     quickAccess: "クイックアクセス",
     quickAccessDescription: "アプリを開かずに音声コマンドでショッピングリストを作成",
+    globalSupport: "グローバルサポート",
+    availableLanguages: "13言語で利用可能",
+    globalSupportDesc: "BuyVoiceはあなたの言語を話します！当アプリは完全に翻訳され、世界中のユーザー向けに最適化されています。",
+    autoDetected: "自動検出：ブラウザの言語を自動で検出し、お好みの言語でBuyVoiceを表示します。",
+    currentlyViewing: "現在表示中の言語：",
   },
   hi: {
     features: "विशेषताएं",
@@ -838,6 +893,11 @@ const translations = {
     widgetDescription: "हमारे स्मार्ट विजेट के साथ अपनी होम स्क्रीन से सीधे BuyVoice तक त्वरित पहुंच",
     quickAccess: "त्वरित पहुंच",
     quickAccessDescription: "ऐप खोले बिना वॉयस कमांड्स के साथ शॉपिंग लिस्ट्स बनाएं",
+    globalSupport: "वैश्विक सहायता",
+    availableLanguages: "13 भाषाओं में उपलब्ध",
+    globalSupportDesc: "BuyVoice आपकी भाषा बोलता है! हमारा ऐप पूरी तरह अनुवादित है और दुनिया भर के उपयोगकर्ताओं के लिए अनुकूलित है।",
+    autoDetected: "स्वचालित पहचान: हम आपके ब्राउज़र की भाषा को स्वचालित रूप से पहचानते हैं और BuyVoice को आपकी पसंदीदा भाषा में दिखाते हैं।",
+    currentlyViewing: "वर्तमान में देख रहे हैं:",
   },
   nl: {
     features: "Functies",
@@ -902,6 +962,11 @@ const translations = {
     widgetDescription: "Snelle toegang tot BuyVoice direct vanaf je homescreen met onze slimme widget",
     quickAccess: "Snelle Toegang",
     quickAccessDescription: "Creëer boodschappenlijsten met spraakopdrachten zonder de app te openen",
+    globalSupport: "Wereldwijde Ondersteuning",
+    availableLanguages: "Beschikbaar in 13 Talen",
+    globalSupportDesc: "BuyVoice spreekt jouw taal! Onze app is volledig vertaald en geoptimaliseerd voor gebruikers wereldwijd.",
+    autoDetected: "Automatisch gedetecteerd: We detecteren automatisch je browsertaal en tonen BuyVoice in je voorkeurstaal.",
+    currentlyViewing: "Momenteel bekeken in:",
   }
 }
 
@@ -1597,10 +1662,10 @@ export default function LandingPage() {
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <Badge className="mb-4 bg-gradient-to-r from-blue-100/80 to-purple-100/80 text-blue-800 border-0 px-4 py-2 backdrop-blur-sm">
-            🌍 Global Support
+            🌍 {t.globalSupport}
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Available in 13 Languages</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">BuyVoice speaks your language! Our app is fully translated and optimized for users worldwide.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t.availableLanguages}</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">{t.globalSupportDesc}</p>
         </div>
 
         <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg p-8 max-w-4xl mx-auto border border-purple-100">
@@ -1623,11 +1688,11 @@ export default function LandingPage() {
 
           <div className="mt-8 text-center">
             <p className="text-sm text-gray-600 mb-4">
-              🎯 <strong>Auto-detected:</strong> We automatically detect your browser language and show BuyVoice in your preferred language.
+              🎯 <strong>{t.autoDetected}</strong>
             </p>
             <div className="flex justify-center">
               <Badge className="bg-green-100 text-green-800 border-0">
-                ✅ Currently viewing in: <strong>{languageNames[currentLanguage].name}</strong>
+                ✅ {t.currentlyViewing} <strong>{languageNames[currentLanguage].name}</strong>
               </Badge>
             </div>
           </div>
