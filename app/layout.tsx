@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Analytics } from '@vercel/analytics/next';
+
 
 export const metadata: Metadata = {
   title: 'BuyVoice - Voice Shopping Lists App | Create Lists by Voice',
@@ -109,6 +111,7 @@ export default function RootLayout({
         />
       </head>
       <body>{children}</body>
+         <Analytics />
     </html>
   )
 }
