@@ -44,6 +44,8 @@ export default function LandingPage() {
 
   const [currentLanguage, setCurrentLanguage] = useState<Language>("en")
   const [isHeaderVisible, setIsHeaderVisible] = useState(true)
+  const [isLoading, setIsLoading] = useState(true)
+  const [iconAnimating, setIconAnimating] = useState(false)
   const t = translations[currentLanguage]
 
   const scrollToSection = (sectionId: string) => {
@@ -69,6 +71,21 @@ export default function LandingPage() {
     const detectedLanguage = detectBrowserLanguage()
     setCurrentLanguage(detectedLanguage)
     console.log(`🌍 Idioma detectado: ${detectedLanguage} (navegador: ${navigator.language})`)
+  }, [])
+
+  // Loader animation
+  useEffect(() => {
+    // Show loader for 1.5 seconds
+    const timer = setTimeout(() => {
+      setIconAnimating(true)
+      // Start icon transition animation
+      setTimeout(() => {
+        setIsLoading(false)
+        setIconAnimating(false)
+      }, 500) // Animation duration
+    }, 1500)
+
+    return () => clearTimeout(timer)
   }, [])
 
   // Add useEffect for auto-play
@@ -115,6 +132,182 @@ export default function LandingPage() {
 
   return (
     <>
+      {/* Loader */}
+      {isLoading && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            zIndex: 10000,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'opacity 0.5s ease-out',
+            opacity: isLoading && !iconAnimating ? 1 : 0,
+            pointerEvents: isLoading ? 'auto' : 'none'
+          }}
+        >
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '32px',
+              animation: iconAnimating ? 'moveToHeader 0.5s ease-in-out forwards' : 'none'
+            }}
+          >
+            {/* Animated Logo Container */}
+            <div style={{ position: 'relative' }}>
+              {/* Glow effect */}
+              <div
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '120px',
+                  height: '120px',
+                  background: 'radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%)',
+                  borderRadius: '50%',
+                  animation: 'glow 2s ease-in-out infinite'
+                }}
+              />
+              {/* Animated Logo */}
+              <img
+                src="/images/app-icon.png"
+                alt="BuyVoice Loading"
+                style={{
+                  width: '100px',
+                  height: '100px',
+                  borderRadius: '24px',
+                  animation: !iconAnimating ? 'floatRotate 3s ease-in-out infinite' : 'shrinkIcon 0.5s ease-in-out forwards',
+                  boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
+                  position: 'relative',
+                  zIndex: 1
+                }}
+              />
+            </div>
+
+            {/* Text and Loading */}
+            {!iconAnimating && (
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                {/* App Name */}
+                <h1 style={{
+                  fontSize: '28px',
+                  fontWeight: 'bold',
+                  color: 'white',
+                  margin: 0,
+                  letterSpacing: '-0.5px',
+                  animation: 'fadeInUp 0.8s ease-out'
+                }}>
+                  BuyVoice
+                </h1>
+
+                {/* Tagline */}
+                <p style={{
+                  fontSize: '14px',
+                  color: 'rgba(255, 255, 255, 0.9)',
+                  margin: 0,
+                  animation: 'fadeInUp 0.8s ease-out 0.2s both'
+                }}>
+                  Voice Shopping Lists
+                </p>
+
+                {/* Modern Loading Bar */}
+                <div style={{
+                  width: '200px',
+                  height: '4px',
+                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                  borderRadius: '2px',
+                  overflow: 'hidden',
+                  marginTop: '8px',
+                  animation: 'fadeInUp 0.8s ease-out 0.4s both'
+                }}>
+                  <div style={{
+                    height: '100%',
+                    background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent)',
+                    animation: 'shimmer 1.5s ease-in-out infinite'
+                  }} />
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Add CSS animations */}
+      <style jsx>{`
+        @keyframes floatRotate {
+          0%, 100% {
+            transform: translateY(0) rotate(0deg) scale(1);
+          }
+          25% {
+            transform: translateY(-10px) rotate(5deg) scale(1.05);
+          }
+          75% {
+            transform: translateY(5px) rotate(-5deg) scale(0.95);
+          }
+        }
+
+        @keyframes glow {
+          0%, 100% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.5;
+          }
+          50% {
+            transform: translate(-50%, -50%) scale(1.2);
+            opacity: 0.8;
+          }
+        }
+
+        @keyframes shimmer {
+          0% {
+            transform: translateX(-200%);
+          }
+          100% {
+            transform: translateX(200%);
+          }
+        }
+
+        @keyframes fadeInUp {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        @keyframes shrinkIcon {
+          0% {
+            width: 100px;
+            height: 100px;
+            opacity: 1;
+          }
+          100% {
+            width: 48px;
+            height: 48px;
+            opacity: 0.8;
+          }
+        }
+
+        @keyframes moveToHeader {
+          0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(calc(-50vw + 80px), calc(-50vh + 60px));
+            opacity: 0;
+          }
+        }
+      `}</style>
+
       {/* Header */}
       <header style={{
         position: 'fixed',
