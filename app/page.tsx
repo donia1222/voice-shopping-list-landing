@@ -477,8 +477,8 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50/80 via-purple-50/60 to-blue-50/70 backdrop-blur-sm">
       {/* Header */}
-      <header className="container mx-auto px-4 py-6">
-        <nav className="flex items-center justify-between">
+      <header className="sticky top-0 bg-white z-50 shadow-md">
+        <nav className="container mx-auto px-4 py-6 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img src="/images/app-icon.png" alt="BuyVoice App Icon" className="w-12 h-12 rounded-lg" />
             <span className="text-xl font-bold text-gray-900">BuyVoice</span>
@@ -536,11 +536,11 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-4 text-center mb-20 mt-6">
+      <section className="container mx-auto px-4 text-center mb-20 pt-6">
         <Badge className="mb-4 bg-blue-100/80 text-blue-800 hover:bg-blue-100/90 border-0 backdrop-blur-sm">
           {t.voicePowered}
         </Badge>
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight text-balance">
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight text-balance">
           {t.heroTitle}
           <span className="bg-gradient-to-r from-purple-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
             {t.heroTitleAccent}

@@ -174,10 +174,10 @@ export const translations = {
     pricing: "Preise",
     contact: "Kontakt",
     voicePowered: "🎤 Sprach-Einkaufslisten",
-    heroTitle: "Erstelle Einkaufslisten",
-    heroTitleAccent: " per Sprache",
+    heroTitle: "Schreibst Du Deine Einkaufslisten noch",
+    heroTitleAccent: " von Hand?",
     heroDescription:
-      'Sprechen Sie und wir erledigen den Rest. Sagen Sie Sätze wie "morgen kaufe ich Hähnchen, Tomaten und Zwiebeln" und unsere KI wählt die Zutaten für Ihre Liste aus. Vergessen Sie das Tippen!',
+      'Mit BuyVoice sprichst Du einfach – und die Liste erstellt sich von selbst.',
     downloadIOS: "Für iOS herunterladen",
     viewAppStore: "Im App Store ansehen",
     powerfulFeatures: "Leistungsstarke Funktionen für intelligentes Einkaufen",
