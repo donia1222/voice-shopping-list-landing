@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Camera, Bell, MapPin, Smartphone, Star, Download, Share2, Edit3, DollarSign } from "lucide-react"
+import { Camera, Bell, MapPin, Smartphone, Star, Share2, Edit3, DollarSign } from "lucide-react"
 import { ChevronDown, Globe } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import Link from "next/link"
@@ -392,36 +392,23 @@ export default function LandingPage() {
           </span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed text-pretty">{t.heroDescription}</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-purple-400/90 via-blue-500/90 to-purple-600/90 hover:from-purple-500/90 hover:via-blue-600/90 hover:to-purple-700/90 text-white px-8 py-3 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300"
-            asChild
+        <div className="flex flex-row gap-4 justify-center items-center mb-12">
+          <a
+            href="https://apps.apple.com/app/voice-shopping-list/id6505125372"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform hover:scale-105"
           >
-            <a
-              href="https://apps.apple.com/app/voice-shopping-list/id6505125372"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Download className="w-5 h-5 mr-2 text-white" />
-              {t.downloadIOS}
-            </a>
-          </Button>
-          <Button
-            variant="outline"
-            size="lg"
-            className="px-8 py-3 bg-white/60 backdrop-blur-sm border-purple-200/50 hover:bg-white/80 text-purple-700 hover:text-purple-800"
-            asChild
+            <img src="/apple.webp" alt="Descargar para iOS" className="h-14 w-auto" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.lwebch.VoiceList"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform hover:scale-105"
           >
-            <a
-              href="https://apps.apple.com/app/voice-shopping-list/id6505125372"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Smartphone className="w-5 h-5 mr-2" />
-              {t.viewAppStore}
-            </a>
-          </Button>
+            <img src="/google.webp" alt="Descargar para Android" className="h-14 w-auto" />
+          </a>
         </div>
         <CookieBanner />
         {/* Hero Image - Phone Mockup */}
@@ -744,21 +731,23 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 text-balance">{t.readyTransform}</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto text-pretty">{t.readyTransformDesc}</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-purple-600/90 text-white hover:bg-purple-700 hover:text-white px-8 py-3 backdrop-blur-sm shadow-lg [&>a]:text-white [&>a>*]:text-white"
-              asChild
+          <div className="flex flex-row gap-4 justify-center">
+            <a
+              href="https://apps.apple.com/app/voice-shopping-list/id6505125372"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-105"
             >
-              <a
-                href="https://apps.apple.com/app/voice-shopping-list/id6505125372"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Download className="w-5 h-5 mr-2 text-white" />
-                {t.downloadIOS}
-              </a>
-            </Button>
+              <img src="/apple.webp" alt="Descargar para iOS" className="h-14 w-auto" />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.lwebch.VoiceList"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-105"
+            >
+              <img src="/google.webp" alt="Descargar para Android" className="h-14 w-auto" />
+            </a>
           </div>
         </div>
       </section>
